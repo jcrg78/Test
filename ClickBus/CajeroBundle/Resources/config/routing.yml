@@ -1,0 +1,3 @@
+cajero_homepage:
+    pattern:  /
+    defaults: { _controller: CajeroBundle:Cajero:index }

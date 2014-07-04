@@ -1,0 +1,7 @@
+parameters:
+#    ordenamiento.example.class: Test\ClickBus\OrdenamientoBundle\Example
+
+services:
+#    ordenamiento.example:
+#        class: %ordenamiento.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

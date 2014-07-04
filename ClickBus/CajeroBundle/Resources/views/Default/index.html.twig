@@ -1,0 +1,22 @@
+<html>
+<header>
+    <h1>Cajero</h1>
+</header>
+<body>
+
+<form action="{{ path('cajero_homepage') }}" method="post" {{ form_enctype(form) }}>
+    {{ form_errors(form) }}
+
+    {{ form_row(form.retiro) }}
+
+    {{ form_rest(form) }}
+
+    <input type="submit" value="Submit" />
+</form>
+{% for flashMessage in app.session.flashbag.get('salida') %}
+    <div class="salida">
+        {{ flashMessage }}
+    </div>
+{% endfor %}
+</body>
+</html>

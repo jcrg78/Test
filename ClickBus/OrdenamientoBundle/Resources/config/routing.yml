@@ -1,0 +1,3 @@
+ordenamiento_homepage:
+    pattern:  /
+    defaults: { _controller: OrdenamientoBundle:Ordenamiento:index }

@@ -1,0 +1,24 @@
+<html>
+<header>
+    <h1>Ordenamiento</h1>
+</header>
+<body>
+
+La lista actual es: {{ lista }}<br><br>
+
+<form action="{{ path('ordenamiento_homepage') }}" method="post" {{ form_enctype(form) }}>
+    {{ form_errors(form) }}
+
+    {{ form_row(form.rango) }}
+
+    {{ form_rest(form) }}
+
+    <input type="submit" value="Submit" />
+</form>
+{% for flashMessage in app.session.flashbag.get('salida') %}
+    <div class="salida">
+        {{ flashMessage }}
+    </div>
+{% endfor %}
+</body>
+</html>
